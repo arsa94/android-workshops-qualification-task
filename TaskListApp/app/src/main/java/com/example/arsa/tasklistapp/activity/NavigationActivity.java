@@ -13,7 +13,7 @@ import com.example.arsa.tasklistapp.adapter.TabAdapter;
 
 public class NavigationActivity extends AppCompatActivity {
 
-    FloatingActionButton addButton;
+    FloatingActionButton newTaskButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +22,9 @@ public class NavigationActivity extends AppCompatActivity {
 
         initTabs();
 
-        addButton = (FloatingActionButton) findViewById(R.id.add_task_button);
+        newTaskButton = (FloatingActionButton) findViewById(R.id.new_task_button);
 
-        addButton.setOnClickListener(new View.OnClickListener() {
+        newTaskButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final Intent intent = new Intent(NavigationActivity.this, NewTaskActivity.class);

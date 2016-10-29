@@ -35,7 +35,7 @@ public class TasksDoneFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        view = inflater.inflate(R.layout.fragment_tasks_to_do, container, false);
+        view = inflater.inflate(R.layout.fragment_tasks_done, container, false);
 
         listView = (ListView) view.findViewById(R.id.list_view);
 
